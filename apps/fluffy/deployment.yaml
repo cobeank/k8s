@@ -28,12 +28,12 @@ spec:
             cpu: 100m
             memory: 128Mi
         volumeMounts:
-        - name: my-persistent-storage
+        - name: pv0003
           mountPath: /usr/share/nginx/html
       volumes:
         - name: pv0003
           persistentVolumeClaim:
-          claimName: myclaim
+              claimName: myclaim
 ---
 apiVersion: v1
 kind: Service
