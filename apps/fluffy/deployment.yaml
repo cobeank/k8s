@@ -52,7 +52,7 @@ metadata:
   name: my-app-ingress
 spec:
   rules:
-  - host: localhost
+  - host: node1
     http:
       paths:
       - path: /
