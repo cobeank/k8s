@@ -19,7 +19,7 @@ spec:
       - name: my-app
         image: nginx:1.25
         ports:
-        - containerPort: 8050
+        - containerPort: 80
         resources:
           requests:
             cpu: 50m
@@ -37,5 +37,5 @@ spec:
   selector:
     app: my-app
   ports:
-  - port: 8050
+  - port: 80
     targetPort: 80
