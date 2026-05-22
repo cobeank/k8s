@@ -28,9 +28,9 @@ spec:
             cpu: 100m
             memory: 128Mi
         volumeMounts:
-        - name: pv0003
+        - name: vol1
           mountPath: /usr/share/nginx/html
       volumes:
-        - name: pv0003
+        - name: vol1
           persistentVolumeClaim:
-              claimName: myclaim
+              claimName: my-app-claim
